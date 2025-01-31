@@ -33,3 +33,30 @@ if (employee.performanceScore >=80) {     // if and else statements to determine
     console.log(`Winston Le is not eligible for a promotion.`);
 }
 
+// Task 4 - Customer Feedback Records
+
+let feedback = [                          // The original three feedbacks
+    {
+        customerName: "Connor",
+        feedbackText: "I would recommend this place.",
+        rating: "5/5"
+    },
+    {
+        customerName: "Summer",
+        feedbackText: "This place is alright.",
+        rating: "3/5"
+    },
+    {
+        customerName: "Mareion",
+        feedbackText: "Love this place.",
+        rating: "4/5"
+    }
+];
+
+feedback.push({                           // The new addition to the array
+    customerName: "Manh",
+    feedbackText: "It needs more pizzazz.",
+    rating: "3/5"
+});
+
+console.log("Customer Feedbacks:", feedback)
