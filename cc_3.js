@@ -5,6 +5,11 @@ prices.unshift (30);                       // Adds 30 to the beginning of the ar
 prices.shift();                            // Deletes the beginning value
 console.log("Updated Prices:", prices);    // Updated Prices
 
+
+
+
+
+
 // Task 2 - Modifying Customer Orders
 
 let orders = [10, 15, 20, 25, 30];                                                      // Original Output
@@ -12,6 +17,11 @@ orders[2] += 5;                                                                 
 let totalorders = orders.reduce ((acc, currentvalue) => acc + currentvalue, 0);         // Calculating the total number of orders
 console.log("Updated Orders:", orders);                                                 // Updated Order list
 console.log("Total Order Count:", totalorders);                                         // Total Order Count
+
+
+
+
+
 
 // Task 3 - Employee Performance Tracking
 
@@ -32,6 +42,11 @@ if (employee.performanceScore >=80) {     // if and else statements to determine
 } else {
     console.log(`Winston Le is not eligible for a promotion.`);
 }
+
+
+
+
+
 
 // Task 4 - Customer Feedback Records
 
@@ -60,3 +75,25 @@ feedback.push({                           // The new addition to the array
 });
 
 console.log("Customer Feedbacks:", feedback)
+
+
+
+
+
+// Task 5 - Inventory Management System
+
+let inventory = {                         // Inventory Object consist of three properties: Name, Stock, and Price
+    itemName: "Phone",
+    stockCount: 50,
+    price: 999,
+
+    calculateTotalValue: function () {    // Multiplying the stockCount and price to get the total value of all the phones
+    return this.stockCount * this.price;
+    }
+};
+
+console.log(`Item Name: ${inventory.itemName}`);
+console.log(`Stock Count: ${inventory.stockCount}`);
+console.log(`Price: $${inventory.price}`);
+
+console.log(`Total Value: $${inventory.calculateTotalValue()}`)
